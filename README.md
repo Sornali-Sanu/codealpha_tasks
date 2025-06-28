@@ -1,8 +1,11 @@
 "# codealpha_tasks" 
+```
 🛒 Express E-Commerce Website
 This is a simple and responsive e-commerce website built using Express.js, EJS, and Bootstrap. It includes multiple pages such as Home, Shop, Cart, and Admin. The goal is to provide a dynamic shopping interface with basic cart functionality and an admin view for managing products.
+```
 
 📸 Screenshots
+
 🏠 Home Page
 ![Home Page](Screenshots/web_home.png)
 
@@ -95,3 +98,79 @@ EJS
 This project is build for an internship purpose.
 
 ---
+```
+#Social_Media_app#
+
+This is a simple and responsive Social Media App built using Express.js, Bootstrap and react. It includes multiple pages such as Homepage, timeline, profilepage. The goal is to provide a dynamic interface with basic  functionality for Users
+---
+```
+## 📁 Project Structure
+```
+Frontend
+ReactFrontend
+public/
+├── assest/
+│ ├── pofile/img
+│ ├── post/img
+├── style.css
+├── ad.png
+src/
+├── components/
+│ ├── login/
+│ ├── register/
+│ ├── feed/
+│ ├── closeFriend/
+│ ├── online/
+│ ├── post/
+│ ├── topbar/
+│ ├── rightbar/
+│ ├── share/
+│ └── sidebar/
+├── pages/
+│ ├── home/Home.jsx
+│ └── profile/Profile.jsx
+| ├── context
+├── dummyData.jsx
+├── App.jsx
+└── main.jsx
+---
+Backend
+mini_Social_app
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
