@@ -54,6 +54,7 @@ Open your browser and visit:
 
 
 http://localhost:3000
+```
 📁 Project Structure
 
 project/
@@ -82,7 +83,7 @@ project/
 ├── server.js            
 ├── package.json
 └── README.md
-
+```
 🙌 Acknowledgements
 Bootstrap
 
