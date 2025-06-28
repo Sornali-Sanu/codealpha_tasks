@@ -4,16 +4,27 @@ This is a simple and responsive e-commerce website built using Express.js, EJS, 
 
 📸 Screenshots
 🏠 Home Page
-![Home Page](Screenshots/homepage.png)
+![Home Page](Screenshots/web_home.png)
+
+🏠 Home Page About Section
+![Home Page](Screenshots/home_about.png)
+
+
+🏠 Home Page (why choose us) Section
+![Home Page](Screenshots/home_choose.png)
+
+
+🏠 Home Page contact Section
+![Home Page](Screenshots/contact.png)
 
 🛍️ Shop Page
-Shop Page
+![shop Page](Screenshots/shopSection.png)
 
 🛒 Cart Page
-Cart Page
+![cart Page](Screenshots/cart.png)
 
 🔐 Admin Page
-Admin Page
+![Admin Page](Screenshots/admin.png)
 
 🚀 Features
 Responsive UI with Bootstrap
