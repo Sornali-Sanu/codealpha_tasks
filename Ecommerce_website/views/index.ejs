@@ -1,0 +1,222 @@
+<%- include("layouts/header.ejs") %>
+<main>
+    <button id="openChatButton">
+      <img src="images/chat.png" alt="chat icon">
+    </button>
+    <div class="chat-container" id="chatContainer" style="display: none;">
+      <div class="message-container" id="messages">
+
+      </div>
+     
+      <div class="message">
+        <input type="text" placeholder="Type your message..." id="messageInput">
+        <button id="sendMessageButton" onclick="sendMessage()">Send</button>
+      </div>
+      <button id="closeChatButton">X</button>
+    </div>
+
+    
+  <div class="banner_section layout_padding">
+    <div class="container">
+      <div id="main_slider" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="image_1"><img src="images/vegetableBasket.jpg"></div>
+              </div>
+              <div class="col-md-6">
+                <h1 class="banner_taital">Vegetables <span style="color: #ecad15;">Basket</span></h1>
+                <p class="banner_text">Welcome to Fresh Harvest, Fresh Harvest is a trusted vegetable shop offering a wide range of fresh, organic, and locally-sourced vegetables. From leafy greens to root veggies, everything is handpicked for quality and taste. We work with local farmers to ensure chemical-free, sustainable produce at affordable prices. With a focus on freshness, hygiene, and customer satisfaction, we make healthy eating easy. Visit us for the best in farm-fresh vegetables and experience the joy of healthy living every day.</p>
+                <div class="buy_bt"><a href="/shop">Buy Now</a></div>
+                <div class="read_bt"><a href="#">Read More</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="image_1"><img src="images/vege3-removebg-preview.png"></div>
+              </div>
+              <div class="col-md-6">
+                <h1 class="banner_taital">Buy Fresh <span style="color: #11b334;">Vegetables</span></h1>
+                <p class="banner_text">Fresh vegetables are rich in vitamins, minerals, and fiber, making them essential for a healthy diet. They support digestion, boost immunity, and help prevent chronic diseases. Crisp, colorful, and full of flavor, fresh vegetables are best when locally sourced and free from harmful chemicals. Eating a variety daily ensures balanced nutrition and energy. Whether in salads, soups, or curries, fresh vegetables add taste, texture, and vital nutrients to every meal.</p>
+                <div class="buy_bt"><a href="/shop">Buy Now</a></div>
+                <div class="read_bt"><a href="#">Read More</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="image_1"><img src="images/chili.jpg"></div>
+              </div>
+              <div class="col-md-6">
+                <h1 class="banner_taital">Best Deal For <span style="color: #eb0909;">Today</span></h1>
+                <p class="banner_text">Get the best deals on fresh vegetables with seasonal discounts, combo offers, and bulk purchase savings. Enjoy fresh produce like tomatoes, potatoes, leafy greens, and more at unbeatable prices. Many stores offer special packs, loyalty rewards, and promo codes to help you save more. Whether shopping online or at your local market, you can eat healthy without breaking the bank. Don’t miss out—grab the freshest veggies at the best prices today!</p>
+                <div class="buy_bt"><a href="/shop">Buy Now</a></div>
+                <div class="read_bt"><a href="#">Read More</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
+          <i class=""><img src="images/left-icon.png"></i>
+        </a>
+        <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
+          <i class=""><img src="images/right-icon.png"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!--banner section end -->
+
+
+
+  <!--about section start -->
+  <div class="about_section layout_padding">
+    <div class="container">
+      <div class="image_2"><img src="images/img-2.png"></div>
+      <h1 class="about_taital">About Our Shop</h1>
+      <div class="image_3"><img src="images/img-3.png"></div>
+      <p class="lorem_text">
+        <strong class="vegAbout" style="color: #05b422; font-size: large; align-items: center;">Fresh & Healthy Vegetables Everyday!</strong>
+        <br><br>
+        <p style="align-items: center;">At our shop, we believe in providing farm-fresh, chemical-free vegetables straight from local growers to your table. From leafy greens to seasonal favorites, every item is handpicked to ensure premium quality and great taste. Whether you’re cooking for your family or running a restaurant, we’ve got the freshest produce to keep you healthy and satisfied. Visit us today and experience the difference of real freshness!
+
+        </p>
+     </p>
+      <div class="read_bt_1"><a href="#">Read More</a></div>
+    </div>
+
+<div class="vegetables_section layout_padding">
+  <div class="container">
+      <div class="image_2"><img src="images/img-2.png"></div>
+      <h1 class="about_taital">Our Vegetables</h1>
+      <p class="lorem_text">Our vegetables are fresh, natural, and sourced directly from trusted local farms. We offer a wide variety including leafy greens, root vegetables, and seasonal produce, all carefully selected to ensure top quality and taste. Grown without harmful chemicals, our vegetables are perfect for healthy meals. Whether you’re shopping for your family or your business, we provide the freshness and nutrition you can count on every day.Take a quick look ⚡</p>
+  
+      <div class="vegetables_section_2 py-5">
+  <div class="container">
+    <div class="row g-4">
+      <% products.forEach(product => { %>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex">
+          <div class="card shadow-sm w-100">
+            <img src="<%= product.image_path %>" class="card-img-top product-img" alt="<%= product.product_title %>">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title"><%= product.product_price %> TK</h5>
+              <a href="/product/<%= product.id %>" class="text-decoration-none text-dark">
+                <h6 class="card-subtitle mb-2"><%= product.product_title %></h6>
+              </a>
+              <p class="card-text small text-muted"><%= product.product_description %></p>
+              
+              <form action="/cart/add" method="POST" class="mt-auto">
+                <input type="hidden" name="productId" value="<%= product.id %>">
+                <button type="submit" class="btn btn-dark w-100">🛒 Add to Cart</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      <% }); %>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+      
+
+
+  <!--choose section start -->
+  <div class="choose_section layout_padding">
+    <div class="container">
+      <div class="image_2"><img src="images/img-2.png"></div>
+      <h1 class="about_taital">Why Choose Us</h1>
+      <div class="image_3"><img src="images/img-14.png"></div>
+      <p class="lorem_text">We offer the freshest, locally-sourced vegetables at affordable prices. Our produce is chemical-free, handpicked daily, and quality-checked to ensure the best for your family. With a wide variety, friendly service, and a commitment to health and sustainability, we make healthy eating easy and reliable. Shop with us for freshness you can trust and service you’ll love.</p>
+      <div class="read_bt_1"><a href="#">Read More</a></div>
+    </div>
+  </div>
+  <!--choose section end -->
+  
+  <!--contact section start -->
+  <div class="contact_section layout_padding">
+    <div class="container">
+      <div class="image_2"><img src="images/img-2.png"></div>
+      <h1 class="about_taital">Contact Us</h1>
+      <div class="row">
+          <div class="col-md-6">
+            <div class="mail_sectin">
+              <input type="text" class="email-bt" placeholder="Your Name" name="Name">
+              <input type="text" class="email-bt" placeholder="Email" name="Name">
+              <input type="text" class="email-bt" placeholder="Phone Number" name="Name">
+              <textarea class="massage-bt" placeholder="Massage" rows="5" id="comment" name="Massage"></textarea>
+              <div class="send_bt"><a href="#">Send</a></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="map_main">
+              <div class="map-responsive">
+                <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France" width="600" height="480" frameborder="0" style="border:0; width: 100%;" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    const socket = io();
+
+    document.addEventListener('DOMContentLoaded', function() {
+  const socket = io();
+  const messagesDiv = document.getElementById('messages');
+
+
+  function addClassesToMessages() {
+    var messages = messagesDiv.querySelectorAll('p');
+    messages.forEach(function(message, index) {
+      if (index % 2 === 0) {
+        message.classList.add('even');
+        message.classList.remove('odd');
+      } else {
+        message.classList.add('odd');
+        message.classList.remove('even');
+      }
+    });
+  }
+
+
+  socket.on('message', (message) => {
+    messagesDiv.innerHTML += `<p>${message}</p>`;
+    addClassesToMessages();
+  });
+
+
+  function sendMessage() {
+    const messageInput = document.getElementById('messageInput');
+    const message = messageInput.value;
+    socket.emit('message', message);
+    messageInput.value = '';
+  }
+
+  const openChatButton = document.getElementById('openChatButton');
+  const closeChatButton = document.getElementById('closeChatButton');
+  const chatContainer = document.getElementById('chatContainer');
+
+  openChatButton.addEventListener('click', () => {
+    chatContainer.style.display = 'block';
+  });
+
+  closeChatButton.addEventListener('click', () => {
+    chatContainer.style.display = 'none';
+  });
+
+  const sendMessageButton = document.getElementById('sendMessageButton');
+  sendMessageButton.addEventListener('click', sendMessage);
+});
+
+
+</script>
+</main>
+  <%- include("layouts/footer.ejs") %>

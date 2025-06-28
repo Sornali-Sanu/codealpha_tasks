@@ -1,0 +1,107 @@
+[
+  {
+    "id": "PROD_1",
+    "product_title": "Bottle Gourd",
+    "product_price": 80,
+    "product_description": "Bottle gourd is low in calories, high in water, and great for digestion and heart health.",
+    "image_path": "/uploads/bottleGourd.webp"
+  },
+  {
+    "id": "PROD_2",
+    "product_title": "Broccoli",
+    "product_price": "300",
+    "product_description": "Broccoli is rich in vitamins, fiber, and antioxidants—great for immunity and overall health.",
+    "image_path": "/uploads/broccoli.jpeg"
+  },
+  {
+    "id": "PROD_3",
+    "product_title": "Capcicum",
+    "product_price": "200",
+    "product_description": "Capsicum is rich in vitamins A and C, adds flavor and color, and supports immune health.",
+    "image_path": "/uploads/capcicum.webp"
+  },
+  {
+    "id": "PROD_4",
+    "product_title": "Carrot",
+    "product_price": "90",
+    "product_description": "Carrots are rich in vitamin A, support eye health, boost immunity, and add natural sweetness.",
+    "image_path": "/uploads/carrot.webp"
+  },
+  {
+    "id": "PROD_5",
+    "product_title": "Peppers",
+    "product_price": "50",
+    "product_description": "Peppers are rich in vitamins A and C, boost immunity, aid digestion, and add vibrant flavor",
+    "image_path": "/uploads/chili.jpeg"
+  },
+  {
+    "id": "PROD_6",
+    "product_title": "Coriander",
+    "product_price": "100",
+    "product_description": "Coriander is rich in antioxidants, aids digestion, and adds fresh flavor to many dishes.",
+    "image_path": "/uploads/coriander.webp"
+  },
+  {
+    "id": "PROD_7",
+    "product_title": "Egg_plant",
+    "product_price": "100",
+    "product_description": "Eggplant is rich in fiber and antioxidants, supports heart health, and adds flavor to many dishes.",
+    "image_path": "/uploads/eggplant.webp"
+  },
+  {
+    "id": "PROD_8",
+    "product_title": "Figs",
+    "product_price": "1000",
+    "product_description": "Figs are rich in fiber, antioxidants, and natural sugars—great for digestion and overall wellness.",
+    "image_path": "/uploads/figs.webp"
+  },
+  {
+    "id": "PROD_9",
+    "product_title": "Ladyfinger",
+    "product_price": "150",
+    "product_description": "Ladyfinger (okra) is rich in fiber, vitamins, and antioxidants—great for digestion and heart health.",
+    "image_path": "/uploads/ladyfinger.webp"
+  },
+  {
+    "id": "PROD_10",
+    "product_title": "Mashrooms",
+    "product_price": "200",
+    "product_description": "Mushrooms are low in calories, rich in antioxidants, and boost immunity and overall health.",
+    "image_path": "/uploads/mashroom.webp"
+  },
+  {
+    "id": "PROD_11",
+    "product_title": "Peas ",
+    "product_price": "150",
+    "product_description": "Peas are rich in protein, fiber, and vitamins, supporting energy, digestion, and overall health.",
+    "image_path": "/uploads/pea.webp"
+  },
+  {
+    "id": "PROD_12",
+    "product_title": "Potato",
+    "product_price": "60",
+    "product_description": "Potatoes are rich in carbohydrates, fiber, and vitamin C—great for energy and overall nutrition.",
+    "image_path": "/uploads/potato.jpeg"
+  },
+  {
+    "id": "PROD_13",
+    "product_title": "Pumpkin",
+    "product_price": "100",
+    "product_description": "Pumpkin is rich in vitamins A and C, antioxidants, and fiber, supporting immunity and digestion.",
+    "image_path": "/uploads/pumpkin.webp"
+  },
+  {
+    "id": "PROD_14",
+    "product_title": "Spinach",
+    "product_price": "150",
+    "product_description": "Spinach is packed with iron, vitamins, and antioxidants, promoting healthy blood and strong immunity.",
+    "image_path": "/uploads/spinach.webp"
+  },
+  {
+    "id": "PROD_15",
+    "product_title": "Tomato",
+    "product_price": "45",
+    "product_description": "Tomatoes are rich in vitamins C and K, antioxidants, and support heart health and skin vitality.",
+    "image_path": "/uploads/tomato.webp"
+  }
+]

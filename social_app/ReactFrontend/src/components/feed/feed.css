@@ -1,0 +1,24 @@
+.feed {
+  flex: 5.5;
+}
+.feedWraper {
+  padding: 20px;
+}
+.feedToggleButtons {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.feedToggleButtons button {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #eee;
+  border-radius: 5px;
+}
+
+.feedToggleButtons .activeBtn {
+  background-color: #1877f2;
+  color: white;
+}
